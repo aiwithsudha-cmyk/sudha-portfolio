@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){try{var r=document.documentElement,p=localStorage.getItem("palette"),m=localStorage.getItem("mode");if(p&&p!=="sage")r.setAttribute("data-palette",p);if(!m)m=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";r.setAttribute("data-theme",m);}catch(e){}})();</script>
+<title>Disaster Simulation — Sudha Maurya</title>
+<meta name="description" content="A branching-choice browser game on disaster preparedness, where consequence-driven decisions dynamically shape Safety and Composure stats.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header>
+    <div class="menu-wrap">
+      <button class="menu-btn" id="pagesBtn">Menu <span>&#9662;</span></button>
+      <div class="dropdown dropdown-left" id="pagesDropdown">
+        <a href="../index.html#about">About</a>
+        <a href="../work.html">Work</a>
+        <a href="../playground.html">Playground</a>
+        <a href="../assets/resume.pdf">Resume</a>
+      </div>
+    </div>
+
+    <a href="../index.html" class="wordmark">Sudha Maurya</a>
+
+    <div class="right">
+      <div class="menu-wrap">
+        <button class="menu-btn theme-btn" id="themeBtn"><span class="pair"><i></i><i></i></span> Theme <span>&#9662;</span></button>
+        <div class="dropdown dropdown-right dropdown-theme" id="themeDropdown">
+          <span class="theme-label">Mode</span>
+          <div class="mode-row">
+            <button class="mode-btn" data-mode="light">Light</button>
+            <button class="mode-btn" data-mode="dark">Dark</button>
+          </div>
+          <span class="theme-label">Palette</span>
+            <button class="palette-opt" data-p="berry"><span class="pd"><i style="background:#E31C6E"></i><i style="background:#96A61A"></i></span>Berry &amp; olive</button>
+            <button class="palette-opt" data-p="salmon"><span class="pd"><i style="background:#D97A63"></i><i style="background:#201C19"></i></span>Salmon &amp; stripe</button>
+            <button class="palette-opt" data-p="cobalt"><span class="pd"><i style="background:#2B44C9"></i><i style="background:#D9930D"></i></span>Cobalt &amp; marigold</button>
+            <button class="palette-opt" data-p="lagoon"><span class="pd"><i style="background:#1F7A74"></i><i style="background:#D6607A"></i></span>Lagoon &amp; rose</button>
+        </div>
+      </div>
+      <div class="menu-wrap">
+        <button class="menu-btn" id="contactBtn">Contact <span>&#9662;</span></button>
+        <div class="dropdown dropdown-right" id="contactDropdown">
+          <a href="mailto:aiworkwithsudha@gmail.com">Gmail</a>
+          <a href="https://www.linkedin.com/in/sudhamaurya" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://x.com/Work_with_Sudha" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="https://github.com/aiwithsudha-cmyk" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="detail">
+    <a class="back" href="../playground.html">&larr; Back to Playground</a>
+    <p class="eyebrow">Playground</p>
+    <h1>Disaster Simulation</h1>
+    <p class="context">Solo · in progress</p>
+
+    <div class="detail-hero">
+      <img src="../assets/playground/disaster-simulation.jpg" alt="Disaster Simulation game scene">
+      <a class="hero-link" href="https://disasterstimulation.netlify.app/" target="_blank" rel="noopener" aria-label="Play the game"><span class="play-icon" aria-hidden="true">&#9658;</span></a>
+    </div>
+
+    <div class="dsec">
+      <h2><span class="n">01</span> The problem</h2>
+      <p><!-- DRAFT: check this -->Most people don't know what to do when a disaster hits, and a wrong choice can be costly.</p>
+    </div>
+    <div class="dsec">
+      <h2><span class="n">02</span> What I did</h2>
+      <p>Designed and built a branching-choice browser game on disaster preparedness. Each decision has consequences that shape two stats, Safety and Composure, and the choices follow real disaster-response guidance.</p>
+    </div>
+    <div class="dsec">
+      <h2><span class="n">03</span> What I used</h2>
+      <div class="tools">
+        <ul>
+            <li>Claude</li>
+            <li>VS Code</li>
+            <li>GitHub</li>
+            <li>Netlify</li>
+            <li>Google AI Studio</li>
+            <li>Google Flow</li>
+            <li>Leonardo</li>
+            <li>Pixabay</li>
+        </ul>
+      </div>
+    </div>
+    <div class="dsec">
+      <h2><span class="n">04</span> The result</h2>
+      <p><!-- DRAFT: check this -->A playable game, live now, with more scenes still in development.</p>
+    </div>
+
+    <div class="detail-cta">
+      <a class="btn btn-play" href="https://disasterstimulation.netlify.app/" target="_blank" rel="noopener"><span class="tri" aria-hidden="true">&#9658;</span>Play the game &#8599;</a>
+    </div>
+
+    <nav class="pager" id="pager" aria-label="More projects"></nav>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+    <div class="footer-contact">
+      <p class="footer-title">Get in touch</p>
+      <ul class="contact-list">
+        <li><a href="mailto:aiworkwithsudha@gmail.com" aria-label="Email"><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Zm2 .6V17h14V7.1l-7 5.4-7-5.4Zm1.6-.1 5.4 4.2 5.4-4.2H6.6Z"/></svg></span><span class="ct">aiworkwithsudha@gmail.com</span></a></li>
+        <li><a href="https://www.linkedin.com/in/sudhamaurya" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 8.8h3V19h-3V8.8ZM6.7 4a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5ZM10.2 8.8h2.9v1.4h.04c.4-.76 1.4-1.6 2.9-1.6 3.1 0 3.66 2.05 3.66 4.7V19h-3v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V19h-3V8.8Z"/></svg></span><span class="ct">linkedin.com/in/sudhamaurya</span></a></li>
+        <li><a href="https://x.com/Work_with_Sudha" target="_blank" rel="noopener" aria-label="Twitter / X"><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.7 4h2.9l-6.3 7.2L21.7 20h-5.8l-4.5-5.9L6.2 20H3.3l6.7-7.7L2.9 4h5.9l4.1 5.4L17.7 4Zm-1 14.3h1.6L7.9 5.6H6.2l10.5 12.7Z"/></svg></span><span class="ct">@Work_with_Sudha</span></a></li>
+        <li><a href="https://github.com/aiwithsudha-cmyk" target="_blank" rel="noopener" aria-label="GitHub"><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-3 18.5c.5.1.65-.2.65-.46v-1.7c-2.65.58-3.2-1.27-3.2-1.27-.43-1.1-1.06-1.4-1.06-1.4-.87-.6.07-.58.07-.58.96.07 1.47 1 1.47 1 .85 1.46 2.24 1.04 2.78.8.09-.62.33-1.04.6-1.28-2.1-.24-4.32-1.06-4.32-4.7 0-1.04.37-1.9 1-2.56-.1-.24-.43-1.2.1-2.5 0 0 .8-.26 2.62.98a9 9 0 0 1 4.78 0c1.82-1.24 2.62-.98 2.62-.98.52 1.3.2 2.26.1 2.5.62.66 1 1.52 1 2.56 0 3.65-2.23 4.46-4.35 4.7.34.3.65.88.65 1.78v2.64c0 .26.16.56.66.46A9.5 9.5 0 0 0 12 2.5Z"/></svg></span><span class="ct">github.com/aiwithsudha-cmyk</span></a></li>
+      </ul>
+    </div>
+    <a class="hello-box" href="mailto:aiworkwithsudha@gmail.com?subject=Hello" aria-label="Drop a hello — opens your email app">
+      <span class="hello-to">New message &middot; To: Sudha</span>
+      <span class="hello-text">Drop a hello&hellip;</span>
+      <span class="hello-send" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.4 20.4 21 12 3.4 3.6 3.4 10l12 2-12 2 0 6.4Z"/></svg></span>
+    </a>
+    </div>
+    <div class="footer-bottom">
+      <a href="../colophon.html">Colophon</a>
+      <span class="footer-meta">
+        <span>Mumbai, IN</span>
+        <span id="clock">&mdash;</span>
+        <span id="scrollPct">0%</span>
+      </span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
