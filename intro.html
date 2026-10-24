@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){try{var r=document.documentElement,p=localStorage.getItem("palette"),m=localStorage.getItem("mode");if(p&&p!=="sage")r.setAttribute("data-palette",p);if(!m)m=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";r.setAttribute("data-theme",m);}catch(e){}})();</script>
+<title>Sudha Maurya — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .splash {
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    cursor: pointer; text-align: center; padding: 24px;
+  }
+  .splash h1 {
+    font-family: 'Fraunces', serif; font-weight: 500;
+    font-size: clamp(1.6rem, 5vw, 2.4rem); color: var(--fg); margin: 0;
+    opacity: 0; animation: fadeIn 1s ease forwards .2s;
+  }
+  .splash .hint {
+    position: absolute; bottom: 32px; left: 0; right: 0; text-align: center;
+    font-size: .78rem; color: var(--fg-soft); opacity: 0; animation: fadeIn 1s ease forwards 1s;
+  }
+  @keyframes fadeIn { to { opacity: 1; } }
+</style>
+</head>
+<body>
+  <div class="splash" id="splash">
+    <h1>Sudha's Portfolio</h1>
+    <span class="hint">click anywhere, or wait a moment</span>
+  </div>
+
+  <script>
+    // Match whatever palette was last chosen, so the splash isn't jarring
+    (function () {
+      var saved = localStorage.getItem('palette');
+      if (saved && saved !== 'sage') document.documentElement.setAttribute('data-palette', saved);
+    })();
+
+    (function () {
+      var advanced = false;
+      function goHome() {
+        if (advanced) return;
+        advanced = true;
+        window.location.href = 'index.html';
+      }
+      document.getElementById('splash').addEventListener('click', goHome);
+      setTimeout(goHome, 2200);
+    })();
+  </script>
+</body>
+</html>
